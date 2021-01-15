@@ -1,23 +1,46 @@
-import logo from './logo.svg';
 import './App.css';
+import Profile from './components/Profile/Profile';
+
+const shineTypes = ['one', 'two', 'three', 'four', 'five'];
+const littleShineTypes = ['lone', 'ltwo', 'lthree', 'lfour', 'lfive'];
+
+function createShootingStar() {
+  const top = '-10%';
+  const left = Math.floor(Math.random() * 150) + '%';
+  return (
+    <div className="shooting-star" style={{top, left}}>
+      {createStar(true)}
+    </div>
+  );
+}
+
+function createStar(isLittle) {
+  const container = isLittle ? 'lsContainer' : 'sContainer';
+  const type = isLittle ? 'lstar' : 'star';
+  const index = Math.floor(Math.random() * 5);
+  const star = isLittle ? littleShineTypes[index] : shineTypes[index];
+  const top = Math.floor(Math.random() * 101) + '%';
+  const left = Math.floor(Math.random() * 101) + '%';
+  return (
+    <div className={container} style={{top, left}}>
+        <div className={`${type} ${star}`}></div>
+    </div>
+  );
+}
 
 function App() {
+  let stars = [...Array(20)].map(() => createStar(false));
+  stars = stars.concat([...Array(150)].map(() => createStar(true)));
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Profile></Profile>
+      <div className="mountain"></div>
+      <div className="moon-wrapper">
+        <div className="moonlight">
+          <div className="moon"></div>
+        </div>
+      </div>
+      {stars}
     </div>
   );
 }

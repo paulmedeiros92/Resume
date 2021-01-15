@@ -1,0 +1,35 @@
+.Profile {
+  position: relative;
+  top: 25%;
+  height: 50%;
+  width: 50%;
+  margin: auto;
+  z-index: 4;
+  display: flex;
+  flex-direction: row;
+}
+
+.portrait-wrapper {
+  height: 60%;
+  width: 50%;
+}
+
+.portrait {
+  width: 100%;
+  border-radius: .5rem;
+  box-shadow: .5rem .5rem #333;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  margin-left: -.25rem;
+}
+
+.about-me {
+  height: 30%;
+  margin-left: 1rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  background-color: rgba(2, 2, 2, 0.2);
+}
