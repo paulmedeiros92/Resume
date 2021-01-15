@@ -1,0 +1,41 @@
+.Project {
+  margin: .25rem;
+  flex: 1;
+
+  .title {
+    color: #eb9322;
+    font-size: 1.5rem;
+    z-index: 6;
+  }
+
+  .preview {
+    height: 10rem;
+    width: 10rem;
+    position: relative;
+    border-radius: .25rem;
+    border-color: #eb9322;
+    border-width: .1rem;
+    border-style: solid;
+    overflow: hidden;
+
+    .screen {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(2, 2, 2, 0.5);
+      z-index: 6;
+      position: absolute;
+      &:hover {
+        background-color: rgba(2, 2, 2, 0);
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50% ,-50%);
+      height: 100%;
+      z-index: 5;
+    }
+  }
+}

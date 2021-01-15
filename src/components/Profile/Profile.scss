@@ -1,0 +1,86 @@
+$primary-color: #2fa2a4;
+$secondary-color: #eb9322;
+
+.Profile {
+  position: relative;
+  top: 25%;
+  height: 50%;
+  width: 50%;
+  margin: auto;
+  z-index: 4;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  border-radius: .5rem;
+  background-color: rgba(2, 2, 2, 0.2);
+}
+
+.portrait-wrapper {
+  width: 50%;
+}
+
+.portrait {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  border-color: $secondary-color;
+  border-width: .25rem;
+  border-style: solid;
+  overflow: hidden;
+  margin: auto;
+}
+
+.avatar {
+  width: 100%;
+}
+
+.name {
+  text-align: center;
+  font-size: 2rem;
+  color: $primary-color;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  margin-left: -.25rem;
+}
+
+.about-me {
+  margin-left: 1rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  color: $secondary-color;
+  margin: auto;
+}
+
+.projects {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  .projects-title {
+    font-size: 2rem;
+    color: $primary-color;
+    text-align: center;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex: 1;
+  }
+}
+
+.school {
+  img {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}

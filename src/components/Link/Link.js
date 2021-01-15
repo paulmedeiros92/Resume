@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Link.css';
+import './Link.scss';
 import gitIcon from '../../images/github.svg';
 import linkedinIcon from '../../images/linkedin.svg';
 import instagramIcon from '../../images/instagram.svg';
