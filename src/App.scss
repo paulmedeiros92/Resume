@@ -1,3 +1,5 @@
+@import 'global';
+
 * {
   margin: 0;
   padding: 0;
@@ -268,4 +270,38 @@ body {
 @keyframes lsPosFirst {
   from { top: -15%; left: 26%; }
   to { top: 102%; left: -34%;}
+}
+
+/////////////////////////
+///     SCROLLBAR     ///
+/////////////////////////
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #555; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary-color; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888; 
+}
+
+.title {
+  font-size: 2rem;
+  color: $primary-color;
+  text-align: center;
+}
+
+.secondary-title {
+  font-size: 1.5rem;
+  color: $secondary-color;
 }

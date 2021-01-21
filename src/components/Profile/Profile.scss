@@ -1,17 +1,15 @@
-$primary-color: #2fa2a4;
-$secondary-color: #eb9322;
+@import '../../global';
 
 .Profile {
   position: relative;
   top: 25%;
-  height: 50%;
   width: 50%;
   margin: auto;
   z-index: 4;
   display: flex;
   flex-direction: row;
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: $border-radius;
   background-color: rgba(2, 2, 2, 0.2);
 }
 
@@ -34,36 +32,42 @@ $secondary-color: #eb9322;
   width: 100%;
 }
 
-.name {
-  text-align: center;
-  font-size: 2rem;
-  color: $primary-color;
-}
-
 .links {
   display: flex;
   flex-direction: row;
   margin-left: -.25rem;
 }
 
-.about-me {
-  margin-left: 1rem;
-  padding: 1rem;
-  border-radius: .5rem;
-  color: $secondary-color;
-  margin: auto;
+.details {
+  background-color: $content-background-color;
+  border-radius: $border-radius;
+  padding: .5rem;
+
+  .about-me {
+    margin-left: 1rem;
+    border-radius: .5rem;
+    color: $secondary-color;
+    margin: auto;
+  }  
+
+  .school {
+    img {
+      height: 4rem;
+      width: 4rem;
+      vertical-align: text-bottom;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 .projects {
   width: 50%;
   display: flex;
   flex-direction: column;
-
-  .projects-title {
-    font-size: 2rem;
-    color: $primary-color;
-    text-align: center;
-  }
+  padding: 1rem;
 
   .row {
     display: flex;
@@ -71,16 +75,5 @@ $secondary-color: #eb9322;
     margin-top: 1rem;
     margin-bottom: 1rem;
     flex: 1;
-  }
-}
-
-.school {
-  img {
-    height: 3rem;
-    width: 3rem;
-  }
-
-  .title {
-    font-size: 1.5rem;
   }
 }

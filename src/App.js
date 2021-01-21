@@ -1,5 +1,7 @@
-import './App.css';
+import './App.scss';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Profile from './components/Profile/Profile';
+import Showcase from './components/Showcase/Showcase';
 
 const shineTypes = ['one', 'two', 'three', 'four', 'five'];
 const littleShineTypes = ['lone', 'ltwo', 'lthree', 'lfour', 'lfive'];
@@ -33,7 +35,13 @@ function App() {
   stars = stars.concat([...Array(150)].map(() => createStar(true)));
   return (
     <div className="App">
-      <Profile></Profile>
+      <Router>
+        <Route exact path="/"><Profile></Profile></Route>
+        <Route path="/showcase/saia"><Showcase urlKey="saia"></Showcase></Route>        
+        <Route path="/showcase/mtgbuddy"><Showcase urlKey="mtgbuddy"></Showcase></Route>        
+        <Route path="/showcase/discord"><Showcase urlKey="discord"></Showcase></Route>        
+        <Route path="/showcase/tilted"><Showcase urlKey="tilted"></Showcase></Route>        
+      </Router>
       <div className="mountain"></div>
       <div className="moon-wrapper">
         <div className="moonlight">
