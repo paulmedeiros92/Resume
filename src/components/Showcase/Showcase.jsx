@@ -20,8 +20,7 @@ const Showcase = ({ urlKey }) => (
       </div>
       <div className="title-wrapper">
         <div className="secondary-title">
-          Title -
-          {data[urlKey].title}
+          {`Title - ${data[urlKey].title}`}
         </div>
       </div>
       <div className="description-wrapper">
@@ -41,7 +40,7 @@ const Showcase = ({ urlKey }) => (
 );
 
 Showcase.propTypes = {
-  urlKey: PropTypes.string.isRequired,
+  urlKey: PropTypes.oneOf(Object.keys(data)).isRequired,
 };
 
 Showcase.defaultProps = {};

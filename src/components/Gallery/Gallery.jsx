@@ -52,7 +52,7 @@ class Gallery extends React.Component {
 }
 
 Gallery.propTypes = {
-  images: PropTypes.arrayOf(PropTypes.any).isRequired,
+  images: PropTypes.arrayOf(PropTypes.node).isRequired,
 };
 
 Gallery.defaultProps = {

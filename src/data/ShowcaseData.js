@@ -29,7 +29,7 @@ const mtgbuddy = {
 
 const discord = {
   images: [discord1, discord2, discord3, discord4],
-  urlTitle: 'Repo',
+  urlTitle: 'GitHub',
   url: 'https://github.com/paulmedeiros92/Santa-Bot',
   title: 'Creator',
   description: '',

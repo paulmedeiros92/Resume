@@ -3,6 +3,7 @@ import './App.scss';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Profile from './components/Profile/Profile';
 import Showcase from './components/Showcase/Showcase';
+import Job from './components/Job/Job';
 
 const shineTypes = ['one', 'two', 'three', 'four', 'five'];
 const littleShineTypes = ['lone', 'ltwo', 'lthree', 'lfour', 'lfive'];
@@ -42,6 +43,8 @@ function App() {
         <Route path="/showcase/mtgbuddy"><Showcase urlKey="mtgbuddy" /></Route>
         <Route path="/showcase/discord"><Showcase urlKey="discord" /></Route>
         <Route path="/showcase/tilted"><Showcase urlKey="tilted" /></Route>
+        <Route path="/showcase/slalom"><Job urlKey="slalom" /></Route>
+        <Route path="/showcase/UNLV"><Job urlKey="UNLV" /></Route>
       </Router>
       <div className="mountain" />
       <div className="moon-wrapper">

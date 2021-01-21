@@ -1,0 +1,101 @@
+@import '../../global';
+
+.Job {
+  position: relative;
+  top: 25%;
+  height: 50%;
+  width: 50%;
+  margin: auto;
+  z-index: 4;
+  padding: 1rem;
+  border-radius: $border-radius;
+  background-color: rgba(2, 2, 2, 0.2);
+
+  .top {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .portrait {
+      border-radius: $border-radius;
+      width: 50%;
+
+      img {
+        width: 100%;
+      }
+    }
+    
+    .top-panel {
+      height: fit-content;
+      width: 63%;
+      margin: auto 0 auto 1rem;
+
+      .company-description-wrapper {
+        color: $primary-color;
+      }
+
+      .link-wrapper {
+        font-size: 1.5rem;
+        margin: auto;
+        width: fit-content;
+
+        .link {
+          height: 1.5rem;
+          width: 1.5rem;
+          padding: .25rem;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  
+  .bottom {
+    height: 35%;
+
+    .title-wrapper {
+      margin: 1rem 0 1rem 0;
+    
+      .range {
+        float: right;
+      }
+    }
+  
+    .description-wrapper {
+      border-radius: $border-radius $border-radius $border-radius 0;
+      background-color: $content-background-color;
+      padding: .5rem;
+      height: 82%;
+  
+      .content {
+        color: $primary-color;
+      }
+    }
+  
+    .description-wrapper-bottom {
+      border-radius: 0 0 $border-radius $border-radius;
+      background-color: $content-background-color;
+      height: 18%;
+      width: 94%;
+    }
+  
+    .back-button {
+      position: absolute;
+      bottom: 2.5%;
+      right: 2.4%;
+  
+      .back-image {
+        height: 2rem;
+        width: 2rem;
+        background-image: url('../../images/back.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+  
+        &:hover {
+          background-image: url('../../images/back-shadow.svg');
+        }
+      }
+    }
+  }
+}
