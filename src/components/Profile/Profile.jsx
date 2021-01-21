@@ -1,11 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './Profile.scss';
-import Link from '../Link/Link';
+import SocialLink from '../SocialLink/SocialLink';
 import profilePic from '../../images/portrait.jpg';
 import degreeIcon from '../../images/degree.svg';
 import Project from '../Project/Project';
-import { data } from '../../data/ShowcaseData';
+import data from '../../data/ShowcaseData';
 
 const Profile = () => (
   <div className="Profile">
@@ -17,7 +16,9 @@ const Profile = () => (
       <div className="details">
         <div className="about-me">
           <p>
-            I am a fun Portuguese guy who loves learning, problem solving, and language. I love collaborating with others and sharing ideas. You can always find me working on a personal project or learning new languages.
+            I am a fun Portuguese guy who loves learning, problem solving, and language.
+            I love collaborating with others and sharing ideas.
+            You can always find me working on a personal project or learning new languages.
           </p>
         </div>
         <div className="school">
@@ -28,23 +29,23 @@ const Profile = () => (
         </div>
       </div>
       <div className="links">
-        <Link type={"mail"} />
-        <Link type={"linkedin"} />
-        <Link type={"github"} />
-        <Link type={'instagram'} />
+        <SocialLink type="mail" />
+        <SocialLink type="linkedin" />
+        <SocialLink type="github" />
+        <SocialLink type="instagram" />
       </div>
     </div>
     <div className="projects">
       <div className="title">Projects</div>
       <div className="row">
-        <Project title={'Saia.com'} imgSrc={data.saia.images[0]} urlKey={"saia"} />
-        <Project title={'MtgBuddy.com'} imgSrc={data.mtgbuddy.images[0]} urlKey={"mtgbuddy"} />
+        <Project title="Saia.com" imgSrc={data.saia.images[0]} urlKey="saia" />
+        <Project title="MtgBuddy.com" imgSrc={data.mtgbuddy.images[0]} urlKey="mtgbuddy" />
       </div>
-      <div className= "row">
-        <Project title={'Discord Bots'} imgSrc={data.discord.images[0]} urlKey={"discord"} />
-        <Project title={'Tilted Game'} imgSrc={data.tilted.images[0]} urlKey={"tilted"} />
+      <div className="row">
+        <Project title="Discord Bots" imgSrc={data.discord.images[0]} urlKey="discord" />
+        <Project title="Tilted Game" imgSrc={data.tilted.images[0]} urlKey="tilted" />
       </div>
-    </div>    
+    </div>
   </div>
 );
 

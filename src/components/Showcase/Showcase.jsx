@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Showcase.scss';
 import Gallery from '../Gallery/Gallery';
-import { data } from '../../data/ShowcaseData';
-import linkIcon from '../../images/link.svg'
+import data from '../../data/ShowcaseData';
+import linkIcon from '../../images/link.svg';
 
-const Showcase = ({urlKey}) => (
+const Showcase = ({ urlKey }) => (
   <div className="Showcase">
 
     <div className="top">
-      <Gallery images={data[urlKey].images}></Gallery>
+      <Gallery images={data[urlKey].images} />
     </div>
     <div className="bottom">
       <div className="link-wrapper">
@@ -19,7 +19,10 @@ const Showcase = ({urlKey}) => (
         </a>
       </div>
       <div className="title-wrapper">
-        <div className="secondary-title">Title - {data[urlKey].title}</div>
+        <div className="secondary-title">
+          Title -
+          {data[urlKey].title}
+        </div>
       </div>
       <div className="description-wrapper">
         <div className="secondary-title">Description</div>
@@ -27,17 +30,19 @@ const Showcase = ({urlKey}) => (
           <p>{data[urlKey].description}</p>
         </div>
       </div>
-      <div className="description-wrapper-bottom"></div>
+      <div className="description-wrapper-bottom" />
     </div>
     <div className="back-button">
       <a href="/">
-        <div className="back-image"></div>
+        <div className="back-image" />
       </a>
     </div>
   </div>
 );
 
-Showcase.propTypes = {};
+Showcase.propTypes = {
+  urlKey: PropTypes.string.isRequired,
+};
 
 Showcase.defaultProps = {};
 
