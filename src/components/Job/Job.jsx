@@ -34,14 +34,18 @@ const Job = ({ urlKey }) => (
       <div className="description-wrapper">
         <div className="secondary-title">Description</div>
         <div className="content">
-          <p>{jobData[urlKey].description}</p>
+          <p>
+            &emsp;
+            {jobData[urlKey].jobDescription}
+          </p>
         </div>
       </div>
-      <div className="description-wrapper-bottom" />
-      <div className="back-button">
-        <a href="/">
-          <div className="back-image" />
-        </a>
+      <div className="footer">
+        <div className="back-button">
+          <a href="/">
+            <div className="back-image" />
+          </a>
+        </div>
       </div>
     </div>
   </div>

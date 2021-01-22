@@ -32,29 +32,53 @@ function createStar(isLittle) {
 //   );
 // }
 
-function App() {
-  let stars = [...Array(20)].map(() => createStar(false));
-  stars = stars.concat([...Array(150)].map(() => createStar(true)));
-  return (
-    <div className="App">
-      <Router>
-        <Route exact path="/"><Profile /></Route>
-        <Route path="/showcase/saia"><Showcase urlKey="saia" /></Route>
-        <Route path="/showcase/mtgbuddy"><Showcase urlKey="mtgbuddy" /></Route>
-        <Route path="/showcase/discord"><Showcase urlKey="discord" /></Route>
-        <Route path="/showcase/tilted"><Showcase urlKey="tilted" /></Route>
-        <Route path="/showcase/slalom"><Job urlKey="slalom" /></Route>
-        <Route path="/showcase/UNLV"><Job urlKey="UNLV" /></Route>
-      </Router>
-      <div className="mountain" />
-      <div className="moon-wrapper">
-        <div className="moonlight">
-          <div className="moon" />
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isMobile: window.innerWidth <= 1500,
+    };
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions() {
+    this.setState({ isMobile: window.innerWidth <= 1500 });
+  }
+
+  render() {
+    const { isMobile } = this.state;
+    let stars = [...Array(20)].map(() => createStar(false));
+    stars = stars.concat([...Array(150)].map(() => createStar(true)));
+    return (
+      <div className="App">
+        <Router>
+          <Route exact path="/"><Profile /></Route>
+          <Route path="/showcase/saia"><Showcase urlKey="saia" isMobile={isMobile} /></Route>
+          <Route path="/showcase/mtgbuddy"><Showcase urlKey="mtgbuddy" isMobile={isMobile} /></Route>
+          <Route path="/showcase/discord"><Showcase urlKey="discord" isMobile={isMobile} /></Route>
+          <Route path="/showcase/tilted"><Showcase urlKey="tilted" isMobile={isMobile} /></Route>
+          <Route path="/showcase/slalom"><Job urlKey="slalom" isMobile={isMobile} /></Route>
+          <Route path="/showcase/UNLV"><Job urlKey="UNLV" isMobile={isMobile} /></Route>
+        </Router>
+        <div className="mountain" />
+        <div className="moon-wrapper">
+          <div className="moonlight">
+            <div className="moon" />
+          </div>
         </div>
+        {stars}
       </div>
-      {stars}
-    </div>
-  );
+    );
+  }
 }
 
 export default App;

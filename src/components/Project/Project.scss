@@ -1,6 +1,9 @@
 .Project {
   margin: .25rem;
-  flex: 1;
+
+  .secondary-title {
+    height: 2rem;
+  }
 
   .preview {
     height: 10rem;
@@ -30,6 +33,15 @@
       transform: translate(-50% ,-50%);
       height: 100%;
       z-index: 5;
+    }
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .Project {
+    .preview {
+      height: 8rem;
+      width: 8rem;
     }
   }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Project.scss';
 import data from '../../data/ShowcaseData';
+import jobData from '../../data/JobData';
 
 const Project = ({ title, imgSrc, urlKey }) => (
   <div className="Project">
@@ -18,7 +19,7 @@ const Project = ({ title, imgSrc, urlKey }) => (
 Project.propTypes = {
   title: PropTypes.string.isRequired,
   imgSrc: PropTypes.node.isRequired,
-  urlKey: PropTypes.oneOf(Object.keys(data)).isRequired,
+  urlKey: PropTypes.oneOf(Object.keys({ ...data, ...jobData })).isRequired,
 };
 
 Project.defaultProps = {};

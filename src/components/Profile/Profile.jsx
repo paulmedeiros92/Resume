@@ -73,8 +73,8 @@ class Profile extends React.Component {
           </div>
           <div className={`projects ${projectsSelected ? '' : 'invisible'}`}>
             <div className="row">
-              <Project title="Saia.com" imgSrc={data.saia.images[0]} urlKey="saia" />
-              <Project title="MtgBuddy.com" imgSrc={data.mtgbuddy.images[0]} urlKey="mtgbuddy" />
+              <Project title="Saia" imgSrc={data.saia.images[0]} urlKey="saia" />
+              <Project title="MtgBuddy" imgSrc={data.mtgbuddy.images[0]} urlKey="mtgbuddy" />
             </div>
             <div className="row">
               <Project title="Discord Bots" imgSrc={data.discord.images[0]} urlKey="discord" />
@@ -86,6 +86,7 @@ class Profile extends React.Component {
               <Project title="Consulting" imgSrc={jobData.slalom.images[0]} urlKey="slalom" />
               <Project title="Bio-Informatics" imgSrc={jobData.UNLV.images[0]} urlKey="UNLV" />
             </div>
+            <div className="row" />
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ const saia = {
   urlTitle: 'Saia.com',
   url: 'https://www.saia.com/home',
   title: 'Software Engineer',
-  description: 'It was fun',
+  description: 'This project was a full redesign of Saia\'s public web page in Angular. We were also tasked with rebuilding the API that feeds realtime data and provides estimates for customers ont he site in Node. We accomplished complete feature parity between the old site and the new along with many new feature and more accurate real time tracking!',
 };
 
 const mtgbuddy = {
@@ -24,7 +24,7 @@ const mtgbuddy = {
   urlTitle: 'MtgBuddy.com',
   url: 'https://www.mtgbuddy.com/',
   title: 'Creator',
-  description: '',
+  description: 'MtgBuddy.com is companion app I created meant to be used as supplemental information while playing Magic The Gathering in the Draft or Sealed formats. This page which was made in React relies on a python script to scrape top picks from a draft site called Draftism. It then is designed to dynamically display all the top picks from each available set to help people draft more consistent draft decks.',
 };
 
 const discord = {
@@ -32,7 +32,7 @@ const discord = {
   urlTitle: 'GitHub',
   url: 'https://github.com/paulmedeiros92/Santa-Bot',
   title: 'Creator',
-  description: '',
+  description: 'I have created quite a few Discord bots, most notably is my Santa Bot. Santa Bot is essentially a karma tracking bot that triggers on "naughty" or "nice" callouts within a server. Santa Bot gamifys the experience with a leader-board and a feature to track what people want for X-Mas "Santa\'s List".',
 };
 
 const tilted = {
@@ -40,7 +40,7 @@ const tilted = {
   urlTitle: 'Play Store',
   url: 'https://play.google.com/store/apps/details?id=com.PungMadro.Tilted',
   title: 'Co-Creator',
-  description: '',
+  description: 'This is a silly game my brother and I made that uses a gyroscope to track how an in game platform should tilt. It was a fun experience made using Unity and I would not recommend using a gyroscope as a control for you first game build. It was a very enlightening and fun experience in game development.',
 };
 
 const data = {

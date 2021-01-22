@@ -5,11 +5,13 @@ import Gallery from '../Gallery/Gallery';
 import data from '../../data/ShowcaseData';
 import linkIcon from '../../images/link.svg';
 
-const Showcase = ({ urlKey }) => (
+const Showcase = ({ urlKey, isMobile }) => (
   <div className="Showcase">
-
     <div className="top">
-      <Gallery images={data[urlKey].images} />
+      {!isMobile && (<Gallery images={data[urlKey].images} />)}
+      {isMobile && (
+        <img src={data[urlKey].images[0]} alt={urlKey} />
+      )}
     </div>
     <div className="bottom">
       <div className="link-wrapper">
@@ -26,21 +28,26 @@ const Showcase = ({ urlKey }) => (
       <div className="description-wrapper">
         <div className="secondary-title">Description</div>
         <div className="content">
-          <p>{data[urlKey].description}</p>
+          <p>
+            &emsp;
+            {data[urlKey].description}
+          </p>
         </div>
       </div>
-      <div className="description-wrapper-bottom" />
-    </div>
-    <div className="back-button">
-      <a href="/">
-        <div className="back-image" />
-      </a>
+      <div className="footer">
+        <div className="back-button">
+          <a href="/">
+            <div className="back-image" />
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 );
 
 Showcase.propTypes = {
   urlKey: PropTypes.oneOf(Object.keys(data)).isRequired,
+  isMobile: PropTypes.bool.isRequired,
 };
 
 Showcase.defaultProps = {};

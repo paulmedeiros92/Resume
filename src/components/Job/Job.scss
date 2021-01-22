@@ -20,6 +20,7 @@
     .portrait {
       border-radius: $border-radius;
       width: 50%;
+      height: fit-content;
 
       img {
         width: 100%;
@@ -55,6 +56,8 @@
     height: 35%;
 
     .title-wrapper {
+      display: flex;
+      justify-content: space-between;
       margin: 1rem 0 1rem 0;
     
       .range {
@@ -63,7 +66,7 @@
     }
   
     .description-wrapper {
-      border-radius: $border-radius $border-radius $border-radius 0;
+      border-radius: $border-radius;
       background-color: $content-background-color;
       padding: .5rem;
       height: 82%;
@@ -73,28 +76,50 @@
       }
     }
   
-    .description-wrapper-bottom {
-      border-radius: 0 0 $border-radius $border-radius;
-      background-color: $content-background-color;
-      height: 18%;
-      width: 94%;
-    }
+    .footer {
+      width: 100%;
+      height: 3rem;
+      position: relative;
   
-    .back-button {
-      position: absolute;
-      bottom: 2.5%;
-      right: 2.4%;
+      .back-button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
   
-      .back-image {
-        height: 2rem;
-        width: 2rem;
-        background-image: url('../../images/back.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-  
-        &:hover {
-          background-image: url('../../images/back-shadow.svg');
+        .back-image {
+          height: 2rem;
+          width: 2rem;
+          background-image: url('../../images/back.svg');
+          background-repeat: no-repeat;
+          background-size: cover;
+    
+          &:hover {
+            background-image: url('../../images/back-shadow.svg');
+          }
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .Job {
+    top: 3%;
+    height: fit-content;
+    max-height: 91%;
+    width: 85%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .top {
+      height: fit-content;
+      flex-direction: column;
+      img {
+        width: 100%;
+      }
+      .top-panel {
+        margin: auto;
+        margin-top: 1rem;
       }
     }
   }
