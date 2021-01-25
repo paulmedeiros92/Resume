@@ -13,15 +13,11 @@
   padding: 1rem;
   border-radius: $border-radius;
   background-color: rgba(2, 2, 2, 0.2);
-}
-
-.portrait-wrapper {
-  width: 50%;
 
   .extra {
     background-color: $content-background-color;
     border-radius: $border-radius;
-    padding: .25rem;
+    padding: .2rem .4rem .1rem .4rem;
     width: fit-content;
     margin: auto;
     cursor: pointer;
@@ -39,8 +35,16 @@
 
     .title {
       font-size: 2rem;
+      text-decoration: none;
     }
   }
+}
+
+.portrait-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
 }
 
 .portrait {

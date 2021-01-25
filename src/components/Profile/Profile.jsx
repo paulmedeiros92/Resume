@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Profile.scss';
 import SocialLink from '../SocialLink/SocialLink';
 import profilePic from '../../images/portrait.jpg';
@@ -20,6 +21,7 @@ class Profile extends React.Component {
   }
 
   render() {
+    const { isMobile } = this.props;
     const { projectsSelected } = this.state;
     return (
       <div className="Profile">
@@ -43,12 +45,14 @@ class Profile extends React.Component {
             <SocialLink type="github" />
             <SocialLink type="instagram" />
           </div>
-          <div className="extra">
-            <a className="title" href="/Paul_Medeiros_Resume.pdf" download>
-              Resume
-              <img src={resumeIcon} alt="resume" />
-            </a>
-          </div>
+          {!isMobile && (
+            <div className="extra">
+              <a className="title" href="/Paul_Medeiros_Resume.pdf" download>
+                Resume
+                <img src={resumeIcon} alt="resume" />
+              </a>
+            </div>
+          )}
         </div>
         <div className="right">
           <div className="view-selector">
@@ -88,13 +92,23 @@ class Profile extends React.Component {
             </div>
             <div className="row" />
           </div>
+          {isMobile && (
+            <div className="extra">
+              <a className="title" href="/Paul_Medeiros_Resume.pdf" download>
+                Resume
+                <img src={resumeIcon} alt="resume" />
+              </a>
+            </div>
+          )}
         </div>
       </div>
     );
   }
 }
 
-Profile.propTypes = {};
+Profile.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+};
 
 Profile.defaultProps = {};
 
