@@ -1,3 +1,5 @@
+@import '../../global';
+
 .Project {
   margin: .25rem;
 
@@ -37,7 +39,7 @@
   }
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: $mobile-width) {
   .Project {
     .preview {
       height: 8rem;

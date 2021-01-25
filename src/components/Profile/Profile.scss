@@ -2,9 +2,10 @@
 
 .Profile {
   position: relative;
-  top: 25%;
-  width: 50%;
+  top: 50%;
+  width: 60%;
   max-height: 91%;
+  transform: translateY(-50%);
   margin: auto;
   z-index: 4;
   display: flex;
@@ -16,6 +17,30 @@
 
 .portrait-wrapper {
   width: 50%;
+
+  .extra {
+    background-color: $content-background-color;
+    border-radius: $border-radius;
+    padding: .25rem;
+    width: fit-content;
+    margin: auto;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      background-color: rgba(3, 3, 3, 0.3);;
+    }
+
+    img {
+      height: 3rem;
+      width: 3rem;
+      vertical-align: middle;
+    }
+
+    .title {
+      font-size: 2rem;
+    }
+  }
 }
 
 .portrait {
@@ -49,18 +74,6 @@
     border-radius: .5rem;
     color: $secondary-color;
     margin: auto;
-  }  
-
-  .school {
-    img {
-      height: 4rem;
-      width: 4rem;
-      vertical-align: text-bottom;
-    }
-  
-    .title {
-      font-size: 1.5rem;
-    }
   }
 }
 
@@ -80,9 +93,8 @@
       &.selected:after {
         content: "";
         display: block;
-        margin: 0 0 0 0;
         width: 50%;
-        padding-top: .5rem;
+        padding-top: .1rem;
         border-bottom: .2rem solid $secondary-color;
         animation: slideIn .25s 1 ease-out forwards;
       }
@@ -125,11 +137,12 @@
   }
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: $mobile-width) {
   .Profile {
     top: 3%;
     height: fit-content;
     width: 85%;
+    transform: unset;
     flex-direction: column;
     overflow-y: auto;
     overflow-x: hidden;

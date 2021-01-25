@@ -7,6 +7,7 @@ import Job from './components/Job/Job';
 
 const shineTypes = ['one', 'two', 'three', 'four', 'five'];
 const littleShineTypes = ['lone', 'ltwo', 'lthree', 'lfour', 'lfive'];
+const MOBILE_WIDTH = 1200;
 
 function createStar(isLittle) {
   const container = isLittle ? 'lsContainer' : 'sContainer';
@@ -36,7 +37,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isMobile: window.innerWidth <= 1500,
+      isMobile: window.innerWidth <= MOBILE_WIDTH,
     };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
@@ -51,7 +52,7 @@ class App extends React.Component {
   }
 
   updateWindowDimensions() {
-    this.setState({ isMobile: window.innerWidth <= 1500 });
+    this.setState({ isMobile: window.innerWidth <= MOBILE_WIDTH });
   }
 
   render() {

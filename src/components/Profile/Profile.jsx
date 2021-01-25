@@ -2,7 +2,7 @@ import React from 'react';
 import './Profile.scss';
 import SocialLink from '../SocialLink/SocialLink';
 import profilePic from '../../images/portrait.jpg';
-import degreeIcon from '../../images/degree.svg';
+import resumeIcon from '../../images/resume.svg';
 import Project from '../Project/Project';
 import data from '../../data/ShowcaseData';
 import jobData from '../../data/JobData';
@@ -36,18 +36,18 @@ class Profile extends React.Component {
                 You can always find me working on a personal project or learning new languages.
               </p>
             </div>
-            <div className="school">
-              <div className="title">
-                <img src={degreeIcon} alt="degree" />
-                B.S. Computer Science, UNLV
-              </div>
-            </div>
           </div>
           <div className="links">
             <SocialLink type="mail" />
             <SocialLink type="linkedin" />
             <SocialLink type="github" />
             <SocialLink type="instagram" />
+          </div>
+          <div className="extra">
+            <a className="title" href="/Paul_Medeiros_Resume.pdf" download>
+              Resume
+              <img src={resumeIcon} alt="resume" />
+            </a>
           </div>
         </div>
         <div className="right">

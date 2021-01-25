@@ -277,17 +277,13 @@ body {
 /////////////////////////
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #555; 
+  width: .3rem;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: $primary-color; 
+  border-radius: $border-radius;
 }
 
 /* Handle on hover */
