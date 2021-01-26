@@ -54,15 +54,20 @@ class App extends React.Component {
   }
 
   createShootingStar() {
-    const speed = Math.floor(Math.random() * 7);
+    const speed = Math.floor(Math.random() * 4) + 3;
     const delay = Math.floor(Math.random() * 11);
     const top = '-10%';
     const left = `${Math.floor(Math.random() * 150)}%`;
-    const animation = `shoot ${speed}s linear ${delay} infinite`;
+    const animation = `shoot ${speed}s linear ${delay}s infinite`;
     this.setState({
       shootingStar:
       (
-        <div className="shooting-star" style={{ top, left, animation }}>
+        <div
+          className="shooting-star"
+          style={{
+            top, left, animation,
+          }}
+        >
           {this.createStar(true)}
         </div>
       ),

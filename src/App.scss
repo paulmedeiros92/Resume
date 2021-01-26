@@ -43,6 +43,11 @@ body {
   height: 5%;
   width: 5%;
   position: absolute;
+  .lsContainer {
+    .lstar {
+      background-color: $secondary-color;
+    }
+  }
   // -webkit-animation: shoot 5s 1 linear;
   // -moz-animation: shoot 5s 1 linear;
   // -o-animation: shoot 5s 1 linear;
