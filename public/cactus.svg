@@ -1,0 +1,19 @@
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#41ceb3" id="svg_2" d="m82,38.5l0,13.5c0,3.9 -3.1,7 -7,7l0,0c-3.9,0 -7,-3.1 -7,-7l0,-29.6c0,-6.6 -5.2,-12.3 -11.8,-12.4c-6.7,-0.1 -12.2,5.3 -12.2,12l0,45c0,3.9 -3.1,7 -7,7l0,0c-3.9,0 -7,-3.1 -7,-7l0,-13.5c0,-5.2 -4.3,-9.5 -9.5,-9.5l0,0c-5.2,0 -9.5,4.3 -9.5,9.5l0,14.5c0,11 9,20 20,20l13,0l0,26l24,0l0,-41l13,0c11,0 20,-9 20,-20l0,-14.5c0,-5.2 -4.3,-9.5 -9.5,-9.5l0,0c-5.2,0 -9.5,4.3 -9.5,9.5z" class="st17"/>
+  <path fill="#11967d" id="svg_4" d="m93,45l0,8c0,5.5 -4.5,10 -10,10l-15,0l0,-30c0,-2.8 -2.2,-5 -5,-5l0,0c-2.8,0 -5,2.2 -5,5l0,69.5c0,1.9 -1.6,3.5 -3.5,3.5l0,0c-1.9,0 -3.5,1.6 -3.5,3.5l0,1c0,1.9 1.6,3.5 3.5,3.5l13.5,0l0,-41l21,0c6.6,0 12,-5.4 12,-12l0,-16c0,-2.2 -1.8,-4 -4,-4l0,0c-2.2,0 -4,1.8 -4,4z" class="st16"/>
+  <path stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="6" stroke="#444b54" fill="none" id="svg_5" d="m37,74l0,0c-3.9,0 -7,-3.1 -7,-7l0,-13.5c0,-5.2 -4.3,-9.5 -9.5,-9.5l0,0c-5.2,0 -9.5,4.3 -9.5,9.5l0,14.5c0,11 9,20 20,20l13,0l0,26l24,0l0,-41l13,0c11,0 20,-9 20,-20l0,-14.8c0,-5.1 -4.1,-9.2 -9.2,-9.2l-0.2,0c-5.3,0 -9.5,4.2 -9.5,9.5c0,4.4 0,9.5 0,13.5c0,3.9 -3.1,7 -7,7l0,0" class="st0"/>
+  <path stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="6" stroke="#444b54" fill="none" id="svg_6" d="m68,52l0,-29.6c0,-6.6 -5.2,-12.3 -11.8,-12.4c-6.7,-0.1 -12.2,5.3 -12.2,12l0,45" class="st0"/>
+  <line stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="6" stroke="#444b54" fill="none" id="svg_7" y2="114" y1="114" x2="94" x1="24" class="st0"/>
+  <path stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="6" stroke="#444b54" fill="none" id="svg_9" d="m13.5,47l-2.5,-2.5l2.5,2.5z" class="st0"/>
+  <line stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="6" stroke="#444b54" fill="none" id="svg_10" y2="45" y1="45" x2="105" x1="101" class="st0"/>
+  <line stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="6" stroke="#444b54" fill="none" id="svg_11" y2="89.3" y1="89.3" x2="68.3" x1="71.3" class="st0"/>
+  <path stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="6" stroke="#444b54" fill="none" id="svg_12" d="m65.7,13.5l2.5,-2.5l-2.5,2.5z" class="st0"/>
+ </g>
+</svg>
