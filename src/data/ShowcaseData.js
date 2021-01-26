@@ -1,15 +1,15 @@
-import saia1 from '../images/projects/Saia/saia.png';
-import saia2 from '../images/projects/Saia/landing-bottom.png';
-import saia3 from '../images/projects/Saia/login.png';
-import saia4 from '../images/projects/Saia/bill-of-lading.png';
-import mtgbuddy1 from '../images/projects/mtgbuddy/landing.png';
-import mtgbuddy2 from '../images/projects/mtgbuddy/mechanics.png';
-import discord1 from '../images/projects/discord/discord.jpg';
-import discord2 from '../images/projects/discord/usage.png';
-import discord3 from '../images/projects/discord/leaderboard.png';
-import discord4 from '../images/projects/discord/presents.png';
-import tilted1 from '../images/projects/tilted/tilted.png';
-import tilted2 from '../images/projects/tilted/firstLevel.png';
+import saia1 from '../images/projects/Saia/saia.jpeg';
+import saia2 from '../images/projects/Saia/landing-bottom.jpeg';
+import saia3 from '../images/projects/Saia/login.jpeg';
+import saia4 from '../images/projects/Saia/bill-of-lading.jpeg';
+import mtgbuddy1 from '../images/projects/mtgbuddy/landing.jpeg';
+import mtgbuddy2 from '../images/projects/mtgbuddy/mechanics.jpeg';
+import discord1 from '../images/projects/discord/discord.jpeg';
+import discord2 from '../images/projects/discord/usage.jpeg';
+import discord3 from '../images/projects/discord/leaderboard.jpeg';
+import discord4 from '../images/projects/discord/presents.jpeg';
+import tilted1 from '../images/projects/tilted/tilted.jpeg';
+import tilted2 from '../images/projects/tilted/firstLevel.jpeg';
 
 const saia = {
   images: [saia1, saia2, saia3, saia4],
