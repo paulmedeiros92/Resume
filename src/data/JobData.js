@@ -1,5 +1,5 @@
-import slalom1 from '../images/jobs/slalom.png';
-import UNLV1 from '../images/jobs/UNLV.png';
+import slalom1 from '../images/jobs/slalom.webp';
+import UNLV1 from '../images/jobs/UNLV.webp';
 
 const slalom = {
   images: [slalom1],

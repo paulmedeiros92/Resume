@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Profile.scss';
 import SocialLink from '../SocialLink/SocialLink';
-import profilePic from '../../images/portrait.jpg';
+import profilePic from '../../images/portrait.webp';
 import resumeIcon from '../../images/resume.svg';
 import Project from '../Project/Project';
 import data from '../../data/ShowcaseData';
