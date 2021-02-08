@@ -33,8 +33,8 @@ class Profile extends React.Component {
           <div className="details">
             <div className="about-me">
               <p>
-                I am a fun Portuguese guy who loves learning, problem solving, and language.
-                I love collaborating with others and sharing ideas.
+                I am a fun Portuguese software engineer who loves learning, problem solving,
+                and language. I love collaborating with others and sharing ideas.
                 You can always find me working on a personal project or learning new languages.
               </p>
             </div>
